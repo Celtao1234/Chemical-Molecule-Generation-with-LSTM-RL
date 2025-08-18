@@ -26,16 +26,15 @@ This project enables the generation of novel, valid, and drug-like molecules as 
 ```
 .
 ├── dataset/                       # Raw .smi files
-├── processed_data/
-│   ├── preprocessing_step_1.smi  # Canonicalized SMILES
-│   ├── tokenized_data.pkl        # Tokenized SMILES and dictionaries
-│   └── split_data/               # Data splits for training
+├
+│── preprocessing_step_1.smi  # Canonicalized SMILES
+│── tokenized_data.pkl        # Tokenized SMILES and dictionaries
+│── split_data/               # Data splits for training
 ├── saved_model/Orig/
-│   ├── lstm_generator.h5         # Pretrained LSTM model
-│   └── lstm_finetuned_rl.h5      # RL fine-tuned model
-├── results/
-│   ├── rewards_log.csv           # RL reward log
-│   └── reward_plot.png           # Reward progression
+│── lstm_generator.h5         # Pretrained LSTM model
+│── lstm_finetuned_rl.h5      # RL fine-tuned model
+│── rewards_log.csv           # RL reward log
+│── reward_plot.png           # Reward progression
 ├── generated_smiles_CN.smi       # Generated SMILES with validity
 ├── generated_molecules_CN.png    # Image grid of valid molecules
 ├── preprocess.py                 # Data preprocessing script
